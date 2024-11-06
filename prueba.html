@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body >
+    <!-- Navbar -->
+    <header class="w-full fixed top-0 z-100">
+      <div class="hidden bg-gray-900 sm:grid">
+        <div class="grid grid-cols-6  items-center">
+          <a href="#" class="p-2 text-center text-md hover:bg-green-400 text-white hover:text-black">HOME</a>
+          <a href="#band" class="p-2 text-center text-md hover:bg-green-400 text-white hover:text-black">BAND</a>
+          <a href="#tour" class="p-2 text-center text-md hover:bg-green-400 text-white hover:text-black">TOUR</a>
+          <a href="#contact" class="p-2 text-center text-md hover:bg-green-400 text-white hover:text-black">CONTACT</a>
+  
+          <div class="relative group">
+            <button class="w-full p-2 text-center text-md group-hover:bg-green-400 text-white group-hover:text-black">MORE <i class="fa fa-caret-down"></i></button>     
+            <div class="hidden w-full text-center absolute left-0 group-hover:grid bg-gray-900">
+              <a href="#" class="p-3 text-xs hover:bg-green-400 text-white hover:text-black lg:text-lg">Merchandise</a>
+              <a href="#" class="p-3 text-xs hover:bg-green-400 text-white hover:text-black lg:text-lg">Extras</a>
+              <a href="#" class="p-3 text-xs hover:bg-green-400 text-white hover:text-black lg:text-lg">Media</a>
+            </div>
+          </div>
+  
+          <a class="w-max h-max flex justify-self-center hover:cursor-pointer"><i class="fa fa-search text-white"></i></a>
+        </div>
+      </div>
+  
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+      <div id="navDemo" class="w-max relative group grid text-white sm:hidden">
+        <a class="w-max h-max p-3 mt-2 ml-6 mb-2 flex justify-self-start hover:cursor-pointer bg-black rounded-md"><i class="fa fa-bars text-white"></i></a>
+
+        <div class="hidden text-center absolute left-0 top-12 group-hover:grid bg-black">
+          <a href="#band" class="p-2 text-center text-md hover:bg-green-400 hover:text-black">BAND</a>
+          <a href="#tour" class="p-2 text-center text-md hover:bg-green-400 hover:text-black">TOUR</a>
+          <a href="#contact" class="p-2 text-center text-md hover:bg-green-400 hover:text-black">CONTACT</a>
+          <a href="#" class="p-2 text-center text-md hover:bg-green-400 hover:text-black">MERCH</a>
+        </div>
+      </div>
+    </header>
+  
+
+    <!-- Page content -->
+    <div class="mt-14">
+      <!-- Automatic Slideshow Images -->
+      <section class="grid py-8 bg-gray-200 text-white">
+        <div class="w-full flex gap-4 overflow-auto p-4">
+          <div class="p-4 bg-slate-900 text-white rounded-lg flex-none w-full sm:flex-1">
+            <img src="./media/losAngeles.jpg" class="rounded-lg w-full h-56 object-cover">
+            <div class="text-center">
+              <h3 class="mt-2">Los Angeles</h3>
+              <p class="text-sm"><b>We had the best time playing at Venice Beach!</b></p>   
+            </div>
+          </div>
+          <div class="p-4 bg-slate-900 text-white rounded-lg flex-none w-full sm:flex-1">
+            <img src="./media/newYork.jpg" class="rounded-lg w-full h-56 object-cover">
+            <div class="text-center">
+              <h3 class="mt-2">New York</h3>
+              <p class="text-sm"><b>The atmosphere in New York is lorem ipsum.</b></p>    
+            </div>
+          </div>
+          <div class="p-4 bg-slate-900 text-white rounded-lg flex-none w-full sm:flex-1">
+            <img src="./media/chicago.jpg" class="rounded-lg w-full h-56 object-cover">
+            <div class="text-center">
+              <h3 class="mt-2">Chicago</h3>
+              <p class="text-sm"><b>Thank you, Chicago - A night we won't forget.</b></p>    
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- The Band Section -->
+      <div id="band" class="py-8 flex flex-col gap-3 items-center">
+        <h2 class="w-52 text-2xl font-bold text-center p-1 bg-gray-700 text-white">THE BAND</h2>
+        <p><i>We love music</i></p>
+        <p class="p-4 text-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <article>
+          <div class="w-full flex gap-4 overflow-auto p-4 text-center">
+            <div class="grid gap-3 p-4 text-white bg-slate-900 rounded-lg items-center flex-none w-full sm:flex-1 sm:max-w-xs">
+              <p class="font-bold">Bono - U2</p>
+              <div class="flex w-full justify-center">
+                <img src="./media/miembro1.webp" alt="Bono - U2" class="rounded-full w-48 h-48 object-cover">
+              </div>
+            </div>
+  
+            <div class="grid gap-3 p-4 text-white bg-slate-900 rounded-lg flex-none w-full sm:flex-1 sm:max-w-xs">
+              <p class="font-bold">Axel Rose - Guns N'Roses</p>
+              <div class="flex w-full justify-center">
+                <img src="./media/miembro2.webp" alt="Axel Rose - Guns N'Roses" class="rounded-full w-48 h-48 object-cover">
+              </div>
+            </div>
+  
+            <div class="grid gap-3 p-4 text-white bg-slate-900 rounded-lg flex-none w-full sm:flex-1 sm:max-w-xs">
+              <p class="font-bold">Freddie Mercury - Queen</p>
+              <div class="flex w-full justify-center">
+                <img src="./media/miembro3.webp" alt="Freddie Mercury - Queen" class="rounded-full w-48 h-48 object-cover">
+              </div>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+
+      <!-- The Tour Section -->
+      <div id="tour" class="py-8 bg-gray-200">
+        <div class="flex flex-col p-4 gap-3 items-center">
+          <h2 class="w-52 text-2xl font-bold text-center p-1 bg-gray-700 text-white">TOUR DATES</h2>
+          <p><i>Remember to book your tickets!</i></p><br>
+
+          <ul class="flex justify-center space-x-8 text-xs sm:text-lg">
+            <li class="text-gray-500">September <span class="text-red-500">Sold out</span></li>
+            <li class="text-gray-500">October <span class="text-red-500">Sold out</span></li>
+            <li class="text-gray-900">November <span>3</span></li>
+          </ul>
+
+          <div class="w-full flex gap-4 overflow-auto p-2 pb-4">
+            <div class="p-4 bg-slate-900 text-white rounded-lg flex-none w-full sm:flex-1">
+              <img src="./media/newYork2.jpg" alt="New York" class="rounded-lg w-full h-56 object-cover">
+              <div class="text-center">
+                <p><b>New York</b></p>
+                <p>Fri 27 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="p-1 bg-white text-black rounded-lg mt-4 hover:bg-green-400">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-900 text-white rounded-lg flex-none w-full sm:flex-1">
+              <img src="./media/paris.jpg" alt="Paris" class="rounded-lg w-full h-56 object-cover">
+              <div class="text-center">
+                <p><b>Paris</b></p>
+                <p>Sat 28 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="p-1 bg-white text-black rounded-lg mt-4 hover:bg-green-400">Buy Tickets</button>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-900 text-white rounded-lg flex-none w-full sm:flex-1">
+              <img src="./media/sanFrancisco.jpg" alt="San Francisco" class="rounded-lg w-full h-56 object-cover">
+              <div class="text-center">
+                <p><b>San Francisco</b></p>
+                <p>Sun 29 Nov 2016</p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="p-1 bg-white text-black rounded-lg mt-4 hover:bg-green-400">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Modal -->
+      <section id="ticketModal" class="flex flex-col p-8 gap-3 items-center">
+        <h2 class="w-52 text-2xl font-bold text-center p-1 bg-gray-700 text-white">Tickets</h2>
+
+        <div class="flex flex-col gap-5">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <label class="flex flex-col">
+              Tickets, $15 per person
+              <input type="text" placeholder="How many?" class="placeholder:italic pl-1 mt-2 bg-slate-200 rounded-sm">
+            </label>
+            <label class="flex flex-col">
+              Send To
+              <input type="text" placeholder="Enter email" class="placeholder:italic pl-1 mt-2 bg-slate-200 rounded-sm">
+            </label>
+          </div>
+          <div class="flex justify-between gap-2 items-center">
+            <button class="w-20 rounded-lg p-1 bg-slate-800 text-white hover:text-black hover:bg-green-400">PAY</button>
+            <button class="w-20 rounded-lg p-1 bg-slate-800 text-white hover:bg-red-600">Close <i class="fa fa-remove"></i></button>
+            <a href="#" class="w-20 p-1 text-center">help?</a>
+          </div>
+        </div>
+      </section>  
+
+      <!-- The Contact Section -->
+      <div id="contact" class="flex flex-col p-8 gap-3 items-center bg-gray-200">
+        <h2 class="w-52 text-2xl font-bold text-center p-1 bg-gray-700 text-white">CONTACT</h2>
+
+        <p><i>Fan? Drop a note!</i></p>
+        <div class="flex flex-col gap-4">
+          <ul class="flex flex-col justify-between sm:flex-row gap-4">
+            <li><i class="fa fa-map-marker"></i> Chicago, US</li>
+            <li><i class="fa fa-phone"></i> Phone: +00 151515</li>
+            <li><i class="fa fa-envelope"></i> Email: vic@mail.com</li>
+          </ul>
+
+          <form action="/action_page.php" target="_blank">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <div>
+                <input type="text" placeholder="Name" required name="Name" class="placeholder:italic pl-1 mt-2 bg-white rounded-sm">
+              </div>
+              <div>
+                <input type="text" placeholder="Email" required name="Email" class="placeholder:italic pl-1 mt-2 bg-white rounded-sm">
+              </div>
+              <div>
+                <input type="text" placeholder="Message" required name="Message" class="placeholder:italic pl-1 mt-2 bg-white rounded-sm">
+              </div>
+            </div>
+            <button type="submit" class="w-full rounded-lg p-1 bg-slate-800 text-white hover:text-black mt-4 hover:bg-green-400">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="grid text-center items-center bg-gray-900 text-white py-2">
+        <div class="flex justify-center space-x-6 my-4 text-2xl">
+          <i class="fa fa-facebook-official"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-snapchat"></i>
+          <i class="fa fa-pinterest-p"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin" ></i>
+        </div>
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="justify-self-center"><img src="./media/w3schools-social.png" class="h-16"></a>
+    </footer>
+  </body>
+</html>
